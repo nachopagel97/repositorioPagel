@@ -1,0 +1,309 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+
+.header {
+  background-color: #fabf00;
+  height: 10rem;
+  width: 100%;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin-left: 2%;
+  margin-right: 5%;
+}
+
+/* navBar */
+
+.navBar {
+  display: flex;
+  gap: 5rem;
+}
+
+.navBar__logo {
+  width: 10rem;
+  height: 10rem;
+  padding: 0;
+  margin: 0;
+}
+
+.navBar__titulo {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+.navBar__titulo--contacto {
+  background-color: #ff0d6b;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 1.5rem;
+  border-radius: 5%;
+}
+
+/* Main */
+
+.main__titulo {
+  padding: 2rem;
+  text-align: center;
+  font-weight: 800;
+  color: rgb(32, 32, 32);
+  position: relative;
+  top: 2rem;
+}
+
+.main__subtitulo {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 200;
+  color: rgb(32, 32, 32);
+  position: relative;
+  top: 1rem;
+}
+
+.section {
+  text-align: center;
+  font-weight: 400;
+  padding: 2rem;
+}
+.section__bold {
+  text-decoration: none;
+  font-weight: 800;
+  color: #ff0d6b;
+}
+
+/* Footer */
+
+.footer {
+  text-align: center;
+  font-weight: 400;
+}
+.footer__bold {
+  color: #ff0d6b;
+  font-weight: 800;
+  padding: 1rem;
+}
+
+/* Header 1 */
+
+.header1 {
+  color: #ff0d6b;
+  padding: 2rem;
+  font-weight: 800;
+}
+
+/* Lista */
+
+.main1 {
+}
+.lista {
+  padding: 2rem;
+  list-style: none;
+}
+.lista__elemento {
+  padding: 1rem;
+  font-weight: 700;
+}
+
+/* Section 1 */
+
+.section1 {
+  padding: 2rem;
+}
+
+.section1__subtitulo {
+  color: #fabf00;
+  padding: 1rem;
+}
+
+.section1__text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+/* Section 2 */
+
+.section2 {
+  padding: 2rem;
+}
+
+.section2__subtitulo {
+  color: #fabf00;
+  padding: 1rem;
+}
+
+.section2__text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+/* Section 3 */
+
+.section3 {
+  padding: 2rem;
+}
+
+.section3__subtitulo {
+  color: #fabf00;
+  padding: 1rem;
+}
+
+.section3__text {
+  font-size: 1.3rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+/* grid */
+
+.grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+
+  grid-template-areas: "imagen1 imagen2 imagen3" "titulo1 titulo2 titulo3";
+
+  padding: 0.5rem;
+  gap: 0.5rem;
+
+  justify-content: space-between;
+  justify-items: center;
+  align-items: stretch;
+}
+
+.item1 {
+  grid-area: imagen1;
+}
+
+.item2 {
+  grid-area: imagen2;
+}
+
+.item3 {
+  grid-area: imagen3;
+}
+
+.item4 {
+  grid-area: titulo1;
+  color: #4d4d4d;
+}
+
+.item5 {
+  grid-area: titulo2;
+  color: #4d4d4d;
+}
+
+.item6 {
+  grid-area: titulo3;
+  color: #4d4d4d;
+}
+
+/* Form */
+.formulario {
+  padding: 2rem;
+}
+
+/* MEDIA QUERIES */
+/* Tablet */
+/* @media (min-width: 768px) {
+  .header {
+    height: 5rem;
+  }
+  .headerContent {
+    justify-content: left;
+
+    height: 100%;
+  }
+  .navBar {
+    gap: 0.5rem;
+  }
+
+  .navBar__logo {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .navBar__titulo {
+    font-weight: 600;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .navBar__titulo--contacto {
+    font-weight: 700;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+
+  .main__titulo {
+    font-size: 2rem;
+  }
+
+  .main__subtitulo {
+    font-size: 1rem;
+  }
+
+  .section {
+    font-size: 0.8rem;
+  }
+
+ 
+
+  .footer {
+    font-size: 0.5rem;
+  }
+} */
+
+/* ANIMACIONES */
+.navBar__titulo--contacto:hover {
+  cursor: pointer;
+  background: #f55b01;
+  transform: scale(1.1);
+}
+
+.navBar__titulo:hover {
+  cursor: pointer;
+
+  transform: scale(1.1);
+  color: #ff0d6b;
+}
+
+.item1:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.item2:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+.item3:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
